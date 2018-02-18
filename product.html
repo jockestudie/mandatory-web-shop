@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Winery</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+
+<div id="site">
+    <header id="masthead">
+        <h1>Awesome wineshop <span class="tagline">Wines for frontend developers since 2017</span></h1>
+        <a href="index.html" id="shop" class="btn btn-warning">Start</a>
+    </header>
+    <div id="content">
+        <div id="products">
+            <ul>
+                <li>
+                    <div class="product-image">
+                        <img src="images/wine1.jpg" alt="" />
+                    </div>
+                    <div class="product-description" data-name="Pinot noir -14" data-price="5">
+                        <h3 class="product-name">Pinot noir -14</h3>
+                        <p class="product-price">&euro; 5</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-1">Quantity</label>
+                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn" /></p>
+                        </form>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-image">
+                        <img src="images/wine2.jpg" alt="" />
+                    </div>
+                    <div class="product-description" data-name="Rioja -12" data-price="8">
+                        <h3 class="product-name">Rioja -12</h3>
+                        <p class="product-price">&euro; 8</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-2">Quantity</label>
+                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn" /></p>
+                        </form>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="product-image">
+                        <img src="images/wine3.jpg" alt="" />
+                    </div>
+                    <div class="product-description" data-name="Cava -15" data-price="11">
+                        <h3 class="product-name">Cava -15</h3>
+                        <p class="product-price">&euro; 11</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div>
+                                <label for="qty-3">Quantity</label>
+                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                            </div>
+                            <p><input type="submit" value="Add to cart" class="btn" /></p>
+                        </form>
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+<footer id="site-info">
+    Copyright &copy; Jocke P 2018
+</footer>
+
+</body>
+</html>
