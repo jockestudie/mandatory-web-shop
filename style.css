@@ -285,6 +285,13 @@ body#checkout-page #site-info {
     color: red;
 }
 
+#wineFirst{
+    width: 30%;
+}
+
+#wineSecond{
+    width: 30%;
+}
 
 
 
