@@ -34,9 +34,13 @@
 
                 str: {
                     value: ""
-                }
+                },
+
+
 
             };
+
+
 
             // Metoder
 
@@ -399,6 +403,22 @@
             return valid;
 
         },
+
+
+    /*function(){
+        let x, text;
+
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("zip").value;
+
+        // If x is Not a Number or less than one or greater than 10
+        if (isNaN(x) || x < 1 ) {
+            text = "Input not valid";
+        } else {
+            text = "Input OK";
+        }
+        document.getElementById("zip").innerHTML = text;
+    }*/
 
 
     };
