@@ -72,7 +72,7 @@
                 </div>
                 <div>
                     <label for="zip">ZIP Code</label>
-                    <input type="text" name="zip" id="zip" data-type="text" data-message="This field cannot be empty" />
+                    <input type="text" name="zip" id="zip" data-type="text"  />
                 </div>
                 <div>
                     <label for="country">Country</label>
@@ -103,6 +103,13 @@
 <footer id="site-info">
     Copyright &copy; Jocke P 2018
 </footer>
-
+<script>
+    function validateForm(){
+        let x = document.forms["coForm"]["zip"].value;
+        if (isNaN(x) || x < 1 ) {
+            alert("Not a valid zipcode");
+            return false;
+        }}
+</script>
 </body>
 </html>
