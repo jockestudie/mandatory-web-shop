@@ -279,7 +279,25 @@ body#checkout-page #site-info {
     display: block;
 }
 
+button[class*=btn] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.minus-btn img {
+    margin-bottom: 3px;
+}
+.plus-btn img {
+    margin-top: 2px;
+}
 
+button:focus,
+input:focus {
+    outline:0;
+}
 
 .message {
     display: block;

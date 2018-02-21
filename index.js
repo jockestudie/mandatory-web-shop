@@ -162,13 +162,55 @@
                         let cartProduct = cartItem.product;
                         let cartPrice = this.currency + " " + cartItem.price;
                         let cartQty = cartItem.qty;
-                        let cartHTML = "<tr><td class='pname'>" + cartProduct + "</td>" + "<td class='pqty'>" + cartQty + "</td>" + "<td class='pprice'>" + cartPrice + "</td></tr>";
+                        let cartHTML = "<tr><td class='pname'>" + cartProduct + "</td>" + "<td class='pqty'>"  + cartQty + "</td>" + "<td class='pprice'>" + cartPrice + "</td></tr>";
 
                         $cartBody.html( $cartBody.html() + cartHTML );
                     }
                 } else {
                     $cartBody.html( "" );
                 }
+                     //adderar eller subtraherar från checkout cart
+
+                            //Html
+                    /*<button class="plus-btn" type="button" name="button">
+                    <img src="plus.svg" alt="" />
+                    </button>
+                    <input type="text" name="name" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                    <img src="minus.svg" alt="" />
+                    </button>*/
+
+                /*$('.minus-btn').on('click', function(e) {
+                    e.preventDefault();
+                    var $this = $(this);
+                    var $input = $this.closest('div').find('input');
+                    var value = parseInt($input.val());
+
+                    if (value &amp;gt; 1) {
+                        value = value - 1;
+                    } else {
+                        value = 0;
+                    }
+
+                    $input.val(value);
+
+                });
+
+                $('.plus-btn').on('click', function(e) {
+                    e.preventDefault();
+                    var $this = $(this);
+                    var $input = $this.closest('div').find('input');
+                    var value = parseInt($input.val());
+
+                    if (value &amp;lt; 100) {
+                        value = value + 1;
+                    } else {
+                        value =100;
+                    }
+
+                    $input.val(value);
+                });*/
+
 
                 if( cartItems.length > 0 ) {
 
