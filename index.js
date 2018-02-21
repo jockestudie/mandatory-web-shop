@@ -162,7 +162,13 @@
                         let cartProduct = cartItem.product;
                         let cartPrice = this.currency + " " + cartItem.price;
                         let cartQty = cartItem.qty;
-                        let cartHTML = "<tr><td class='pname'>" + cartProduct + "</td>" + "<td class='pqty'>"  + cartQty + "</td>" + "<td class='pprice'>" + cartPrice + "</td></tr>";
+                        let cartHTML = "<tr><td class='pname'>" + cartProduct + "</td>" + "<td class='pqty'>"  + cartQty +"<button class=\"plus-btn\" type=\"button\" name=\"button\">\n" +
+                            "<img src=\"images/plus.png\" alt=\"\" />\n" +
+                            "</button>\n" +
+                            "<input type=\"text\" name=\"name\" value=\"1\">\n" +
+                            "<button class=\"minus-btn\" type=\"button\" name=\"button\">\n" +
+                            "<img src=\"images/minus.png\" alt=\"\" />\n" +
+                            "</button>"+ "</td>" + "<td class='pprice'>" + cartPrice + "</td></tr>";
 
                         $cartBody.html( $cartBody.html() + cartHTML );
                     }
@@ -173,18 +179,18 @@
 
                             //Html
                     /*<button class="plus-btn" type="button" name="button">
-                    <img src="plus.svg" alt="" />
+                    <img src="images/plus.png" alt="" />
                     </button>
                     <input type="text" name="name" value="1">
                     <button class="minus-btn" type="button" name="button">
-                    <img src="minus.svg" alt="" />
+                    <img src="images/minus.png" alt="" />
                     </button>*/
 
                 /*$('.minus-btn').on('click', function(e) {
                     e.preventDefault();
-                    var $this = $(this);
-                    var $input = $this.closest('div').find('input');
-                    var value = parseInt($input.val());
+                    let $this = $(this);
+                    let $input = $this.closest('div').find('input');
+                    let value = parseInt($input.val());
 
                     if (value &amp;gt; 1) {
                         value = value - 1;
@@ -198,9 +204,9 @@
 
                 $('.plus-btn').on('click', function(e) {
                     e.preventDefault();
-                    var $this = $(this);
-                    var $input = $this.closest('div').find('input');
-                    var value = parseInt($input.val());
+                    let $this = $(this);
+                    let $input = $this.closest('div').find('input');
+                    let value = parseInt($input.val());
 
                     if (value &amp;lt; 100) {
                         value = value + 1;
